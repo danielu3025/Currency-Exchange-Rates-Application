@@ -1,0 +1,16 @@
+14
+2016-07-26
+Dollar,1,USD,USA,3.844,-0.052
+Pound,1,GBP,Great Britain,5.0439,-0.123
+Yen,100,JPY,Japan,3.6797,1.646
+Euro,1,EUR,EMU,4.2290,0.064
+Dollar,1,AUD,Australia,2.8912,0.424
+Dollar,1,CAD,Canada,2.9054,-0.517
+krone,1,DKK,Denmark,0.5685,0.07
+Krone,1,NOK,Norway,0.4479,-0.267
+Rand,1,ZAR,South Africa,0.2662,-0.894
+Krona,1,SEK,Sweden,0.4448,-0.022
+Franc,1,CHF,Switzerland,3.8860,-0.461
+Dinar,1,JOD,Jordan,5.4150,-0.171
+Pound,10,LBP,Lebanon,0.0255,0
+Pound,1,EGP,Egypt,0.4329,-0.046
