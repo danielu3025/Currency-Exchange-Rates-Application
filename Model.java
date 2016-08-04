@@ -3,6 +3,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 
+
 public class Model {
     public static void main(String[] args) throws IOException {
         Currency[] currencys = null;
