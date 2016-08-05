@@ -1,3 +1,4 @@
+package curr;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -14,6 +15,7 @@ public class fileReader {
             file  =  new FileReader("data.txt");
 
         }catch (FileNotFoundException e) {
+           // Model.log.error(e);
             e.printStackTrace();
         }
         BufferedReader reader = new BufferedReader(file);

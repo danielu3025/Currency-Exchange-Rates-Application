@@ -39,7 +39,7 @@ public class Table extends JFrame {
         {
             public boolean isCellEditable(int row, int column)
             {
-                return false;//This causes all cells to be not editable
+                return false;
             }
         };
 

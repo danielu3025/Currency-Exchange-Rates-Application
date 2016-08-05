@@ -1,3 +1,4 @@
+package curr;
 public class Currency {
     String name;
     int unit;

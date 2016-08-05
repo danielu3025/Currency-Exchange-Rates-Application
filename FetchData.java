@@ -1,3 +1,4 @@
+package curr;
 import java.io.*;
 import java.net.URL;
 import java.net.HttpURLConnection;
@@ -19,6 +20,7 @@ public class FetchData{
         try
         {
             URL url = new URL("http://www.boi.org.il/currency.xml");
+            HttpURLConnection.setFollowRedirects(false);
             con = (HttpURLConnection)url.openConnection();
             con.setRequestMethod("GET");
             con.connect();
@@ -59,14 +61,17 @@ public class FetchData{
         }
         catch(IOException e)
         {
+            //Model.log.error("Cannot fetch data! Returns NULL");
             e.printStackTrace();
         }
         catch(ParserConfigurationException e)
         {
+            //Model.log.error("Cannot parse XML file!");
             e.printStackTrace();
         }
         catch(SAXException e)
         {
+            //Model.log.error("Cannot parse XML file!");
             e.printStackTrace();
         }
         finally
