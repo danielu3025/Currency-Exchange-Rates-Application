@@ -1,34 +1,19 @@
-<<<<<<< HEAD
-/**
- * Created by shahar on 03/08/16.
- */
-
-import javax.swing.*;
-import java.awt.*;
-
-public class Table extends JTable {
-    Currency []currencies;
-    JTable jt;
-    int size;
-    Table(Currency[] currencies, int size){
-
-        String []columns = {"Name", "Unit", "Code", "Country", "Rate", "Change"};
-        String[][] data = new String[size][6];
-        for(int i=0; i<size; i++){
-=======
+package curr;
 import javax.swing.*;
 import java.awt.*;
 import javax.swing.table.DefaultTableModel;
+
 public class Table extends JFrame {
+
     Currency []currencies;
     JTable jt;
     int size;
+
     Table(Currency[] currencies, int size) {
 
         String[] columns = {"Name", "Unit", "Code", "Country", "Rate", "Change"};
         String[][] data = new String[size][6];
         for (int i = 0; i < size; i++) {
->>>>>>> ade0c489964498b601c12c79c212db7fefb51132
             data[i][0] = currencies[i].getName();
             data[i][1] = Double.toString(currencies[i].getUnit());
             data[i][2] = currencies[i].getCode();
@@ -36,19 +21,12 @@ public class Table extends JFrame {
             data[i][4] = Double.toString(currencies[i].getRate());
             data[i][5] = Double.toString(currencies[i].getChange());
         }
-<<<<<<< HEAD
-
-        jt = new JTable(data,columns);
-        jt.setPreferredScrollableViewportSize(new Dimension(450,65));
-        jt.setFillsViewportHeight(true);
-        JScrollPane jp = new JScrollPane(jt);
-        add(jp);
-
-    }
-}
-=======
-        DefaultTableModel tableModel = new DefaultTableModel(data, columns);
-        jt = new JTable(tableModel);
+        jt = new JTable(data,columns){
+            public boolean isCellEditable(int data, int columns)
+            {
+                return false;
+            }
+        };
         jt.setPreferredScrollableViewportSize(new Dimension(450, 65));
         jt.setFillsViewportHeight(true);
         JScrollPane jp = new JScrollPane(jt);
@@ -70,4 +48,3 @@ public class Table extends JFrame {
 
 
 }
->>>>>>> ade0c489964498b601c12c79c212db7fefb51132
